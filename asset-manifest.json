@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/groceries/static/css/main.192d97e0.css",
+    "main.js": "/groceries/static/js/main.e9cdc0c8.js",
+    "index.html": "/groceries/index.html",
+    "main.192d97e0.css.map": "/groceries/static/css/main.192d97e0.css.map",
+    "main.e9cdc0c8.js.map": "/groceries/static/js/main.e9cdc0c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.192d97e0.css",
+    "static/js/main.e9cdc0c8.js"
+  ]
+}
