@@ -9,15 +9,14 @@ const Groceries = () => {
     const state = useSelector((storeState) => storeState);
 
     const groceries = state.groceriesReducer.value;
-    const filters = state.filtersReducer.value;
 
     return (
         <Container>
-            <Header title="Groceries"/>
+            <Header className="header" title="Groceries"/>
             <SearchSelect />
             <GroceryItemsWrapper>
                 {
-                    groceries.map((item, index) => <GroceryItem key={uuid()} checked={item.active}>{item.name}</GroceryItem>)
+                    groceries.map((item) => <GroceryItem key={uuid()} checked={item.active}>{item.name}</GroceryItem>)
                 }
             </GroceryItemsWrapper>
         </Container>

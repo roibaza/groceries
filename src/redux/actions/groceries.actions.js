@@ -1,5 +1,4 @@
 import * as AT from "../action.types";
-import {SHOW_CHECKED} from "../action.types";
 
 export const addProduct = (name) => ({
     type: AT.ADD_PRODUCT,

@@ -56,12 +56,13 @@ const SearchSelect = () => {
                 <Filters />
             </Wrapper>
             <Selection
+                className="options"
                 tabindex="-1"
                 show={filteredOptions.length && display ? "block" : "none"}
                 onMouseLeave={() => setDisplay(false)}
             >
                 {filteredOptions.map((item, index) => (
-                    <SearchItem key={uuid()} handleClick={handleClick}>
+                    <SearchItem className="item" key={uuid()} handleClick={handleClick}>
                         {item.name}
                     </SearchItem>
                 ))}

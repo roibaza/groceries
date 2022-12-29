@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styled from "styled-components";
 import {useSelector, useDispatch} from "react-redux";
 import { all, checked, unchecked } from "../redux/actions/filters.actions";
