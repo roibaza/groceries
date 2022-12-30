@@ -17,10 +17,10 @@ const GroceryItem = ({children, checked}) => {
     }
 
     return (
-        <Container>
-            <div onClick={() => handleCheck(children)}><CheckBox checked={checked}/></div>
+        <Container className="item">
+            <div className="checkbox" onClick={() => handleCheck(children)}><CheckBox checked={checked}/></div>
             <div className="text">{children}</div>
-            <div onClick={() => handleRemove(children)}><Xmark/></div>
+            <div className="delete" onClick={() => handleRemove(children)}><Xmark/></div>
         </Container>
     );
 }

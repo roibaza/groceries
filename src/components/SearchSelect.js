@@ -56,7 +56,7 @@ const SearchSelect = () => {
                 <Filters />
             </Wrapper>
             <Selection
-                className="options"
+                className="select"
                 tabindex="-1"
                 show={filteredOptions.length && display ? "block" : "none"}
                 onMouseLeave={() => setDisplay(false)}

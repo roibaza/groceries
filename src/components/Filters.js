@@ -22,16 +22,19 @@ const Filters = () => {
     }
 
     return (
-        <Container>
+        <Container className="filters">
             <Filter
+                className="all"
                 active={state.context[0]}
                 onClick={() => handleClick("ALL")}
             >All</Filter>
             <Filter
+                className="checked"
                 active={state.context[1]}
                 onClick={() => handleClick("CHECKED")}
             >Checked</Filter>
             <Filter
+                className="unchecked"
                 active={state.context[2]}
                 onClick={() => handleClick("UNCHECKED")}
             >UnChecked</Filter>

@@ -12,9 +12,9 @@ const Groceries = () => {
 
     return (
         <Container>
-            <Header className="header" title="Groceries"/>
+            <Header title="Groceries"/>
             <SearchSelect />
-            <GroceryItemsWrapper>
+            <GroceryItemsWrapper className="grocery-items">
                 {
                     groceries.map((item) => <GroceryItem key={uuid()} checked={item.active}>{item.name}</GroceryItem>)
                 }
