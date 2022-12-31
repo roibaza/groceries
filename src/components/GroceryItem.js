@@ -2,7 +2,8 @@ import styled from "styled-components";
 import CheckBox from "./CheckBox";
 import Xmark from "./Xmark";
 import { useDispatch } from "react-redux";
-import { removeProduct, checkProduct } from '../redux/actions/groceries.actions'
+import {removeProduct, checkProduct, showAll} from '../redux/actions/groceries.actions'
+import {all} from "../redux/actions/filters.actions";
 
 const GroceryItem = ({children, checked}) => {
     
@@ -14,6 +15,8 @@ const GroceryItem = ({children, checked}) => {
     
     const handleRemove = (item) => {
         dispatch(removeProduct(item));
+        dispatch(all());
+        dispatch(showAll());
     }
 
     return (

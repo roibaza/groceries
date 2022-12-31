@@ -52,6 +52,10 @@ const Container = styled.div`
     height: 40px;
     padding: 0 10px;
     background-color: #EFF2F7;
+    
+    .all , .checked, .unchecked {
+        cursor: pointer;
+    }
 `;
 
 const Filter = styled.div`

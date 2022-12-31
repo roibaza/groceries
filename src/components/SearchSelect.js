@@ -97,6 +97,7 @@ const Selection = styled.div`
   margin-left: 30px;
   box-shadow: 1px 1px 0px 0px #eee;
   z-index: 1;
+  cursor: pointer;
 `;
 
 const Wrapper = styled.div`
