@@ -18,15 +18,12 @@ describe('Open Page', () => {
 
     cy.get('.item').should('have.length', 0);
 
-    cy.wait(500)
   });
 
   it("Test Input", () => {
     cy.get('#input').type("t");
 
     cy.get('.option').should('have.length.above', 0);
-
-    cy.wait(500)
 
   });
 
@@ -38,8 +35,6 @@ describe('Open Page', () => {
     cy.get('.option').first().next().click();
 
     cy.get('.item').should('have.length', 2);
-
-    cy.wait(500)
 
   });
 
@@ -54,8 +49,6 @@ describe('Open Page', () => {
     cy.get('.active').should('have.length', 1);
 
     cy.get('.not-active').should('have.length', 1);
-
-    cy.wait(500)
 
   });
 
@@ -99,5 +92,4 @@ describe('Open Page', () => {
     cy.get('#input').clear();
 
   });
-
 })
